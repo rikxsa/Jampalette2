@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Nc-Mn-l5B">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="iqR-ya-Tre">
+            <objects>
+                <viewController id="7Nc-Mn-l5B" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EBN-uh-xzE"/>
+                        <viewControllerLayoutGuide type="bottom" id="HWc-0T-RI4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nyf-TL-TSg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pUd-pd-ObJ">
+                                <rect key="frame" x="-74" y="-124" width="557" height="884"/>
+                                <state key="normal" title="Button" image="Top.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="show" id="a9t-H3-bSj"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R5i-JQ-s2i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-596.5" y="312.5"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="JAM" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zO9-ra-kI0">
+                                <rect key="frame" x="0.0" y="285" width="126" height="129"/>
+                                <state key="normal" title="2D" image="2.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="AUf-Rh-KJk"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oUM-zK-faj"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-tz-cZV">
+                                <rect key="frame" x="125" y="285" width="125" height="129"/>
+                                <state key="normal" title="3E" image="3.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="oUZ-aX-jV1"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="5dn-sn-mgi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbx-fj-sIm">
+                                <rect key="frame" x="250" y="285" width="126" height="129"/>
+                                <state key="normal" title="4F" image="4.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="Iog-Zp-vcg"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zdq-qz-GiY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dld-jN-hV7">
+                                <rect key="frame" x="0.0" y="412" width="126" height="127"/>
+                                <state key="normal" title="5G" image="5.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="XLO-WB-4Dy"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gDJ-rX-oOn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TbN-hd-EMS">
+                                <rect key="frame" x="125" y="412" width="125" height="127"/>
+                                <state key="normal" title="6A" image="6.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="xrh-T9-xng"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ia5-ag-feM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Eo-bM-AHN">
+                                <rect key="frame" x="250" y="412" width="125" height="127"/>
+                                <state key="normal" title="7B" image="7.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="YMN-PN-nHI"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Zva-rI-Coe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SqA-SW-sqA">
+                                <rect key="frame" x="125" y="539" width="125" height="127"/>
+                                <state key="normal" image="ue.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PO3-0i-ZWk">
+                                <rect key="frame" x="250" y="539" width="125" height="127"/>
+                                <state key="normal" image="sita.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4R-0L-ppi">
+                                <rect key="frame" x="107" y="0.0" width="55" height="130"/>
+                                <state key="normal" title="Button" image="E.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FZQ-rs-yJb">
+                                <rect key="frame" x="162" y="0.0" width="54" height="130"/>
+                                <state key="normal" title="Button" image="F.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fgy-f5-AIc">
+                                <rect key="frame" x="215" y="0.0" width="54" height="130"/>
+                                <state key="normal" title="Button" image="G.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vuS-uK-03U">
+                                <rect key="frame" x="268" y="0.0" width="53" height="130"/>
+                                <state key="normal" title="Button" image="A.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gAj-6M-lqi">
+                                <rect key="frame" x="321" y="0.0" width="54" height="130"/>
+                                <state key="normal" title="Button" image="B.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGD-Bv-oyc">
+                                <rect key="frame" x="52" y="0.0" width="55" height="130"/>
+                                <state key="normal" title="Button" image="D.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7sO-BW-0kw">
+                                <rect key="frame" x="0.0" y="156" width="126" height="129"/>
+                                <state key="normal" title="8Ed" image="8.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="ldS-nU-AE9"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="ZU9-bI-Fws"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5AY-IS-MYE">
+                                <rect key="frame" x="250" y="156" width="125" height="129"/>
+                                <state key="normal" title="10Gd" image="10.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="Mzs-ra-2J2"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="D4O-5a-mov"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3mD-X3-2qo">
+                                <rect key="frame" x="0.0" y="539" width="126" height="127"/>
+                                <state key="normal" title="1C" image="1.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="Rdb-R8-Iuf"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="t12-hR-AoC"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lge-aB-zIC">
+                                <rect key="frame" x="0.0" y="0.0" width="53" height="130"/>
+                                <state key="normal" title="Button" image="C.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l2e-mD-JX3">
+                                <rect key="frame" x="125" y="156" width="125" height="129"/>
+                                <state key="normal" title="9Fd" image="9.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="9Be-Bg-DAP"/>
+                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DgY-vH-7ua"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-53.5" y="312.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1.png" width="167" height="170"/>
+        <image name="10.png" width="167" height="170"/>
+        <image name="2.png" width="167" height="170"/>
+        <image name="3.png" width="167" height="170"/>
+        <image name="4.png" width="167" height="170"/>
+        <image name="5.png" width="167" height="170"/>
+        <image name="6.png" width="167" height="170"/>
+        <image name="7.png" width="167" height="170"/>
+        <image name="8.png" width="167" height="170"/>
+        <image name="9.png" width="167" height="170"/>
+        <image name="A.png" width="71" height="170"/>
+        <image name="B.png" width="71" height="170"/>
+        <image name="C.png" width="71" height="170"/>
+        <image name="D.png" width="71" height="170"/>
+        <image name="E.png" width="71" height="170"/>
+        <image name="F.png" width="71" height="170"/>
+        <image name="G.png" width="71" height="170"/>
+        <image name="Top.png" width="502" height="884"/>
+        <image name="sita.png" width="167" height="170"/>
+        <image name="ue.png" width="167" height="170"/>
+    </resources>
+</document>
