@@ -13,86 +13,42 @@ import UIKit
 import AVFoundation
 
 
+import UIKit
 
-
-
-
-
-
-
+//音楽や動画の再生に使えるフレームワーク
+import AVFoundation
 
 
 
 //AudioPlayerDelegateプロトコル：音楽の再生／終了の処理
 class ViewController: UIViewController, AVAudioPlayerDelegate {
     
-    var audioPlayer : AVAudioPlayer!
+   
+    
+    
+    var audioPlayer : AVAudioPlayer?
+    let filenames = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"]
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        //再生する音源のURLを生成(C)
-        let soundFilePath : NSString =
-        NSBundle.mainBundle().pathForResource("C", ofType: "wav")!
-        let fileURL : NSURL = NSURL(fileURLWithPath: soundFilePath as String)!
-            
-        
-        //AVAudioPlayerのインスタンス化
-        audioPlayer = AVAudioPlayer(contentsOfURL: fileURL, error: nil)
-    
-    
         // Do any additional setup after loading the view, typically from a nib.
         
+    
+    
+    
     }
     
     
-
-    
-    
-//AudioPlayerDelegateプロトコル：音楽の再生／終了の処理
-class ViewController: UIViewController, AVAudioPlayerDelegate {
-        
-        var audioPlayerD : AVAudioPlayer!
-        override func viewDidLoad() {
-            super.viewDidLoad()
-            
-        
-            
-            //再生する音源のURLを生成(D)
-            let soundFilePathD : NSString =
-            NSBundle.mainBundle().pathForResource("D", ofType: "wav")!
-            let fileURLD : NSURL = NSURL(fileURLWithPath: soundFilePathD as String)!
-            
-            
-            
-            //AVAudioPlayerのインスタンス化
-            audioPlayerD = AVAudioPlayer(contentsOfURL: fileURLD, error: nil)
-            
-
-            
-            }
- 
-    
-    
-            // Do any additional setup after loading the view, typically from a nib.
-            
+    func playerWithFilename(filename: String) -> AVAudioPlayer? {
+        if let soundFilePath =
+            NSBundle.mainBundle().pathForResource(filename, ofType: "wav"),
+            fileURL = NSURL(fileURLWithPath: soundFilePath) {
+                return AVAudioPlayer(contentsOfURL: fileURL, error: nil)
+        } else {
+            return nil
         }
-        
-
-    
-    
- 
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+    }
     
     
     override func didReceiveMemoryWarning() {
@@ -102,37 +58,14 @@ class ViewController: UIViewController, AVAudioPlayerDelegate {
         
     }
     
-    
-    
     //ボタンをタップしている間音がなるアクション
-    @IBAction func playButton(){
-        audioPlayer.play()
-        
-   }
+    @IBAction func playButton(button: UIButton){
+        audioPlayer = playerWithFilename(filenames[button.tag])
+        audioPlayer?.play()
+    }
     
     //ボタンをタップをやめると音が止まるアクション
     @IBAction func playButton2(){
-        audioPlayer.stop()
+        audioPlayer?.stop()
     }
-    
-    
-    
-    @IBAction func playButtonDstart(){
-        audioPlayerD.play()
-    }
-    
-    
-    @IBAction func playButtonDstop(){
-        audioPlayerD.stop()
-    }
-
-    
-    
- 
-
-
-  
-          
-    
-        
 }
