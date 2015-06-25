@@ -52,8 +52,8 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="playButton" destination="vXZ-lx-hvc" eventType="touchDown" id="AUf-Rh-KJk"/>
-                                    <action selector="playButton2" destination="vXZ-lx-hvc" eventType="touchUpInside" id="oUM-zK-faj"/>
+                                    <action selector="playButtonDstart" destination="vXZ-lx-hvc" eventType="touchDown" id="zh8-Z5-8jD"/>
+                                    <action selector="playButtonDstop" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cuc-mj-HfQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CIU-tz-cZV">
